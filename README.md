@@ -55,30 +55,30 @@ To get started with the project, follow these steps:
 
 ## Sample Project Structure
 
-/src
-├── /routers # Directory containing all router files
-│ ├── /user # Routers for user-related endpoints
-│ │ ├── index.ts
-│ │ ├── user_router1.ts
-│ │ ├── user_router2.ts
-│ │ ├── user.controller.ts
-│ │ ├── user.service.ts
-│ │ ├── user.dto.ts
-│ ├── /product # Router for product-related endpoints
-│ │ ├── index.ts
-│ │ ├── product.spec.ts
-│ │ ├── product.controller.ts
-│ │ ├── product.service.ts
-│ │ ├── dto
-│ │ │ ├── product.dto.ts
-│ | ├── /order # Router for order-related endpoints
-│ │ | ├── index.ts
-│ │ | ├── order_test.spec.ts
-│ │ | ├── order.controller.ts
-│ │ | ├── order.service.ts
-│ └── index.ts # Home page
-├── app.ts # Main application file
-├── config.ts # Application configuration file
+/src  
+├── /routers # Directory containing all router files  
+│ ├── /user # Routers for user-related endpoints  
+│ │ ├── index.ts  
+│ │ ├── user_router1.ts  
+│ │ ├── user_router2.ts  
+│ │ ├── user.controller.ts  
+│ │ ├── user.service.ts  
+│ │ ├── user.dto.ts  
+│ ├── /product # Router for product-related endpoints  
+│ │ ├── index.ts  
+│ │ ├── product.spec.ts  
+│ │ ├── product.controller.ts  
+│ │ ├── product.service.ts  
+│ │ ├── dto  
+│ │ │ ├── product.dto.ts  
+│ │ ├── /order # Router for order-related endpoints  
+│ │ │ ├── index.ts  
+│ │ │ ├── order_test.spec.ts  
+│ │ │ ├── order.controller.ts  
+│ │ │ ├── order.service.ts  
+│ └── index.ts # Home page  
+├── app.ts # Main application file  
+├── config.ts # Application configuration file  
 └── ... # Other files (middleware, models, etc.)
 
 ### Router Directory
