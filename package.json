@@ -1,5 +1,5 @@
 {
-  "name": "express_bootstrap",
+  "name": "express_boilerplate",
   "version": "1.0.0",
   "main": "src/app.ts",
   "scripts": {
