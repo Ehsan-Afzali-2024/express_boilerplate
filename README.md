@@ -1,8 +1,8 @@
-# Your Express TypeScript API with Swagger Integration
+# Your Express TypeScript framework with Swagger integration
 
 ## Overview
 
-This project is a RESTful API built with **Express** and **TypeScript** that integrates **Swagger** for API documentation. The application employs **async handlers** for better error management and uses a modular structure for routers, allowing for easy expansion and organization of the application.
+"This project is a lightweight, unopinionated framework built on top of **Express** and **TypeScript**, integrating **Swagger** for API documentation. The application utilizes **async handlers** for improved error management and follows a modular structure for routers, enabling easy expansion and organization of the application."
 
 ## Features
 
@@ -117,13 +117,13 @@ export = router;
 
 ### Controllers
 
-The **Controllers** in this Express TypeScript API act as the intermediary between the incoming HTTP requests and the application logic. Each controller is responsible for handling specific routes and defining the behavior associated with those routes. This organization promotes a clean architecture by separating business logic, validation, and routing concerns.
+**Controllers** in this Express TypeScript framework act as the intermediary between the incoming HTTP requests and the application logic. Each controller is responsible for handling specific routes and defining the behavior associated with those routes. This organization promotes a clean architecture by separating business logic, validation, and routing concerns.
 
 Controllers can be organized within the router folders, allowing them to stay closely related to their respective routes. However, they are not limited to this structure and can be placed anywhere within the `src` folder as needed, providing flexibility in organizing the codebase.
 
 Controllers leverage decorators from the `ts-zod-decorators` package to implement input validation and error handling gracefully. With validators like `@Validate`, controllers can ensure that incoming data adheres to defined schemas before any processing occurs, preventing invalid data from reaching the service layer. This capability enhances data integrity and application reliability.
 
-For example, in the provided `UserController`, the `createUser` method demonstrates how to apply input validation and error handling through decorators. It employs `@rateLimit` to restrict the number of allowed requests within a specified timeframe, effectively guarding against too many rapid submissions. When an error arises, the @onError decorator provides a systematic way to handle exceptions, allowing for logging or other error management processes to be performed centrally.
+For example, in the provided `UserController`, the `createUser` method demonstrates how to apply input validation and error handling through decorators. It employs `@rateLimit` to restrict the number of allowed requests within a specified timeframe, effectively guarding against too many rapid submissions. When an error arises, the `@onError` decorator provides a systematic way to handle exceptions, allowing for logging or other error management processes to be performed centrally.
 
 Here’s a brief breakdown of key components used in the `UserController`:
 
@@ -152,7 +152,7 @@ Here is a quick reference to the UserController in practice:
 ```typescript
 import { Validate, ZodInput } from "ts-zod-decorators";
 import { CreateUserDto, CreateUser } from "./dto/user.dto";
-import { onError, rateLimit, throttle } from "utils-decorators";
+import { onError, rateLimit } from "utils-decorators";
 
 function exceedHandler() {
   throw new Error("Too much call in allowed window");
