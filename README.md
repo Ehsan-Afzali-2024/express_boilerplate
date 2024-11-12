@@ -57,9 +57,9 @@ To get started with the project, follow these steps:
 
 /src  
 ├── /routers `Directory containing all router files`  
-│ ├── /user # `Routers for user-related endpoints`  
-│ │ ├── user_router1.ts `/user/user_router1`
-│ │ ├── user_router2.ts `/user/user_router2`
+│ ├── /user `Routers for user-related endpoints`  
+│ │ ├── user_router1.ts `/user/user_router1`  
+│ │ ├── user_router2.ts `/user/user_router2`  
 │ │ ├── user.controller.ts  
 │ │ ├── user.service.ts  
 │ │ ├── user.dto.ts  
