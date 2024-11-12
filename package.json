@@ -1,16 +1,23 @@
 {
   "name": "@ehsan-afzali-2024/express_boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/app.ts",
   "scripts": {
     "start": "nodemon src/app.ts",
     "build": "tsc",
     "serve": "node dist/app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "lightweight framework",
+    "framework",
+    "boilerplate",
+    "bootstrap",
+    "lightweight",
+    "nested routers"
+  ],
+  "author": "Ehsan Afzali",
+  "license": "MIT",
+  "description": "A lightweight, unopinionated framework built on top of Express and TypeScript",
   "dependencies": {
     "express": "^4.21.1",
     "express-async-handler": "^1.2.0",

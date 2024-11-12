@@ -1,26 +1,26 @@
-# Your Express TypeScript framework with Swagger integration
+# A lightweight, unopinionated framework built on top of Express and TypeScript
 
 ## Overview
 
-"This project is a lightweight, unopinionated framework built on top of **Express** and **TypeScript**, integrating **Swagger** for API documentation. The application utilizes **async handlers** for improved error management and follows a modular structure for routers, enabling easy expansion and organization of the application."
+**Express Boilerplate** is a lightweight, unopinionated framework built on top of `Express` and `TypeScript`, integrating `Swagger` for API documentation. The application utilizes `async handlers` for improved error management and follows a modular structure for routers, enabling easy expansion and organization of the application.
 
 ## Features
 
+- **Modular Router Structure**: Each router is automatically imported and mounted, providing clean separation of endpoints and logic.
 - **Express Framework**: A lightweight web application framework for building web applications in Node.js.
 - **TypeScript**: Provides strong typing for better development experience and less runtime errors.
 - **Swagger Integration**: Automatically generates interactive API documentation, making it easy for developers and consumers to understand the available endpoints.
 - **Async Handlers**: Supports async/await syntax for writing cleaner and more maintainable asynchronous code without deeply nested callbacks.
-- **Modular Router Structure**: Each router is automatically imported and mounted, providing clean separation of endpoints and logic.
 
 ## Technologies Used
 
-- Node.js
-- Express
-- TypeScript
-- Zod (for input validation)
-- ts-zod-decorators (for validation using Zod with decorators)
-- utils-decorators (for middleware utilities like throttling and error handling)
-- Swagger (for API documentation)
+- **Node.js**
+- **Express**
+- **TypeScript**
+- **Zod** (for input validation)
+- **ts-zod-decorators** (for validation using Zod with decorators)
+- **utils-decorators** (for middleware utilities like throttling and error handling)
+- **Swagger** (for API documentation)
 
 ## Installation
 
@@ -39,51 +39,50 @@ To get started with the project, follow these steps:
    npm install
    ```
 
-3. **Build the TypeScript files** (if necessary):
-
-   ```bash
-   npm run build
-   ```
-
-4. **Run the application**:
+3. **Run the application**:
 
    ```bash
    npm start
    ```
 
-5. **Visit the Swagger UI**: Open your browser and go to `http://localhost:3000/api-docs` to view the automatically generated API documentation.
+4. **Visit the Swagger UI**: Open your browser and go to `http://localhost:3000/api-docs` to view the automatically generated API documentation.
+
+5. **Build**: Compile the TypeScript files for the production environment:
+
+   ```bash
+   npm run build
+   ```
 
 ## Sample Project Structure
 
 /src  
-├── /routers # Directory containing all router files  
-│ ├── /user # Routers for user-related endpoints  
-│ │ ├── index.ts  
-│ │ ├── user_router1.ts  
-│ │ ├── user_router2.ts  
+├── /routers `Directory containing all router files`  
+│ ├── /user # `Routers for user-related endpoints`  
+│ │ ├── user_router1.ts `/user/user_router1`
+│ │ ├── user_router2.ts `/user/user_router2`
 │ │ ├── user.controller.ts  
 │ │ ├── user.service.ts  
 │ │ ├── user.dto.ts  
-│ ├── /product # Router for product-related endpoints  
-│ │ ├── index.ts  
-│ │ ├── product.spec.ts  
+│ ├── /product `Routers for product-related endpoints`  
+│ │ ├── index.ts `/product`
+│ │ ├── product_test.spec.ts  
 │ │ ├── product.controller.ts  
 │ │ ├── product.service.ts  
 │ │ ├── dto  
 │ │ │ ├── product.dto.ts  
-│ │ ├── /order # Router for order-related endpoints  
-│ │ │ ├── index.ts  
+│ │ ├── /order `Routers for order-related endpoints`  
+│ │ │ ├── index.ts `/order`
 │ │ │ ├── order_test.spec.ts  
 │ │ │ ├── order.controller.ts  
 │ │ │ ├── order.service.ts  
-│ └── index.ts # Home page  
-├── app.ts # Main application file  
-├── config.ts # Application configuration file  
-└── ... # Other files (middleware, models, etc.)
+│ └── index.ts `Home page`  
+├── app.ts `Main application file`  
+├── config.ts `Application configuration file`  
+└── ... `Other files (middleware, models, etc.)`
 
 ### Router Directory
 
-Each router file in the `/routers` directory is organized to handle related endpoints. The `index.ts` file in the router directory automatically imports all routers and mounts them to the main Express application, making it simple to add new routes without modifying central files.
+Each router file in the `/routers` directory is organized to handle related endpoints. The `app.ts` file automatically imports all routers and mounts them to the main Express application, making it simple to add new routes without modifying central files.
 
 Files that end with `.controller`, `.service`, `.spec`, `.dto`, `.middleware`, `.error`, or `.decorator`, as well as those that start with `_` or `@`, are excluded from the router list and can be utilized for various other purposes within the application.
 
