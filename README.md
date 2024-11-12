@@ -64,14 +64,14 @@ To get started with the project, follow these steps:
 │ │ ├── user.service.ts  
 │ │ ├── user.dto.ts  
 │ ├── /product `Routers for product-related endpoints`  
-│ │ ├── index.ts `/product`
+│ │ ├── index.ts `/product`  
 │ │ ├── product_test.spec.ts  
 │ │ ├── product.controller.ts  
 │ │ ├── product.service.ts  
 │ │ ├── dto  
 │ │ │ ├── product.dto.ts  
 │ │ ├── /order `Routers for order-related endpoints`  
-│ │ │ ├── index.ts `/order`
+│ │ │ ├── index.ts `/order`  
 │ │ │ ├── order_test.spec.ts  
 │ │ │ ├── order.controller.ts  
 │ │ │ ├── order.service.ts  
