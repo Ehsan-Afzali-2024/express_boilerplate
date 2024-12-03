@@ -30,7 +30,7 @@ To get started with the project, follow these steps:
 
    ```bash
    git clone https://github.com/Ehsan-Afzali-2024/express_boilerplate.git
-   cd your-project
+   cd express_boilerplate
    ```
 
 2. **Install dependencies**:
