@@ -29,7 +29,7 @@ To get started with the project, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-repo/your-project.git
+   git clone https://github.com/Ehsan-Afzali-2024/express_boilerplate.git
    cd your-project
    ```
 
